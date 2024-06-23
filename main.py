@@ -2,7 +2,7 @@ import customtkinter as ctk
 import requests
 import threading
 
-class Wikipedia(ctk.CTk):
+class CHATBOT(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("Chatbot")
@@ -80,8 +80,8 @@ class Wikipedia(ctk.CTk):
                 return answer
             except Exception as e:
                 pass
-            
+
 
 if __name__ == "__main__":
-    app = Wikipedia()
+    app = CHATBOT()
     app.mainloop()
