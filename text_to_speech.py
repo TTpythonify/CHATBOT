@@ -4,7 +4,6 @@ import soundfile as sf
 import tempfile
 import os
 
-
 def Text_to_speech(speech):
     # Generate speech using gTTS
     tts = gTTS(text=speech, lang='en')
@@ -18,4 +17,4 @@ def Text_to_speech(speech):
     data, fs = sf.read(filename)
     sd.play(data, fs)
     sd.wait()
-    os.remove(filename)
+    os.remove(filename)    
